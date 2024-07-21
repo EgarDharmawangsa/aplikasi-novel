@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_text"
+    tools:context=".InsertNovelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsblack"
+            android:gravity="center"
+            android:text="@string/insertn"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/update_tittle"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/insert_title_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitolight"
+            android:layout_marginBottom="16dp"
+            android:background="@color/back_textview"
+            android:hint="@string/newtittle"
+            android:inputType="text"
+            android:textColor="@color/text_hint" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/author"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/insert_author_ui"
+            android:layout_width="352dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/back_textview"
+            android:fontFamily="@font/nunitolight"
+            android:textColor="@color/text_hint" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/category1"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_category_ui"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/nunitolight"
+            android:layout_height="wrap_content"
+            android:background="@color/back_textview"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/body"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/insert_body_ui"
+            android:layout_width="match_parent"
+            android:layout_height="282dp"
+            android:background="@color/back_textview"
+            android:fontFamily="@font/nunitolight"
+            android:hint="@string/typenews"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:textColor="@color/text_hint"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/post_ui"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_kuning"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/post"
+                android:textColor="@color/btn_text"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/insert_to_manage_ui"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_kuning"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/cancel"
+                android:textColor="@color/btn_text"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

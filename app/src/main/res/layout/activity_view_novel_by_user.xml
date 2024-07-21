@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/btn_text"
+    android:padding="16dp"
+    tools:context=".ViewNovelByUserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="70dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/body"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/view_unovel_body_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_unovel_category_ui"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/view_unovel_body_ui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="176dp"
+            android:background="@color/back_textview"
+            android:fontFamily="@font/nunitolight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="70dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/category1"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/view_unovel_category_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_unovel_title_ui"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/nunitolight"
+            android:text="@string/update_tittle"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/view_unovel_title_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/view_unovel_title_ui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_textview"
+            android:fontFamily="@font/nunitolight"
+            app:layout_constraintBottom_toTopOf="@+id/view_unovel_category_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.569"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <TextView
+            android:id="@+id/view_unovel_category_ui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_textview"
+            android:fontFamily="@font/nunitolight"
+            app:layout_constraintBottom_toTopOf="@+id/view_unovel_body_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.732"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <Button
+            android:id="@+id/update_novel_ui"
+            android:layout_width="118dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/btn_kuning"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/updateaja"
+            android:textColor="@color/btn_text"
+            app:layout_constraintBottom_toTopOf="@+id/view_to_manage_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_unovel_body_ui"
+            app:layout_constraintVertical_bias="0.892" />
+
+        <Button
+            android:id="@+id/delete_novel_ui"
+            android:layout_width="118dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/btn_kuning"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/remove"
+            android:textColor="@color/btn_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.763"
+            app:layout_constraintStart_toEndOf="@+id/view_to_manage_ui"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974" />
+
+        <Button
+            android:id="@+id/view_to_manage_ui"
+            android:layout_width="118dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/btn_kuning"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/btn_back"
+            android:textColor="@color/btn_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</android.widget.ScrollView>
